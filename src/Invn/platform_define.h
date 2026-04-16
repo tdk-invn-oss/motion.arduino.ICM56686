@@ -1,0 +1,15 @@
+
+#ifndef INV_IMU_WHOAMI
+#define INV_IMU_WHOAMI 0x08
+#endif
+
+#ifndef SENSOR_DATA_TYPE
+#define SENSOR_DATA_TYPE int32_t
+#endif
+
+#ifndef FORMAT_SENSOR_DATA
+#define FORMAT_SENSOR_DATA FORMAT_20BIT_REG_DATA  
+#endif
+
+#define CUSTOMER_EXAMPLE
+
