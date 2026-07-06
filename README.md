@@ -274,19 +274,19 @@ This sketch initializes the ICM566xx with the SPI interface, and starts logging 
 
 **FIFO_Interrupt**
 
-This sketch initializes the ICM566xx with the I2C interface and interrupt PIN2, and starts logging raw sensor data from IMU FIFO. Sensor data can be monitored on Serial monitor or Serial plotter
+This sketch initializes the ICM566xx with the I2C interface and interrupt pin D2, and starts logging raw sensor data from IMU FIFO. Sensor data can be monitored on Serial monitor or Serial plotter
 
 **APEX_WakeOnMotion**
 
-This sketch initializes the ICM566xx with the I2C interface and interrupt PIN2, and starts the APEX Wake on Motion. A Wake-up message is displayed on the Serial monitor when the sensor detects movement.
+This sketch initializes the ICM566xx with the I2C interface and interrupt pin D2, and starts the APEX Wake on Motion. A Wake-up message is displayed on the Serial monitor when the sensor detects movement.
 
 **APEX_Tap**
 
-This sketch initializes the ICM566xx with the I2C interface and interrupt PIN2, and starts the APEX Tap. A Tap report is displayed on the Serial monitor each time a tap is detected.
+This sketch initializes the ICM566xx with the I2C interface and interrupt pin D2, and starts the APEX Tap. A Tap report is displayed on the Serial monitor each time a tap is detected.
 
 **APEX_Events**
 
-This sketch initializes the ICM566xx with the I2C interface and interrupt PIN2, and starts the APEX Pedometer, Tilt, Tap and Raise to wake. APEX status is displayed on the Serial monitor.
+This sketch initializes the ICM566xx with the I2C interface and interrupt pin D2, and starts the APEX Pedometer, Tilt, Tap and Raise to wake. APEX status is displayed on the Serial monitor.
 
 # IMU data monitoring
 

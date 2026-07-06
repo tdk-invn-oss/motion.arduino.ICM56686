@@ -763,12 +763,16 @@ gyro_config0_ap_gyro_fs_sel_t ICM566xx::gyro_fsr_dps_to_param(uint16_t gyro_fsr_
   gyro_config0_ap_gyro_fs_sel_t ret = GYRO_CONFIG0_AP_GYRO_FS_SEL_2000_DPS;
 
   switch(gyro_fsr_dps) {
-  case 250:  ret = GYRO_CONFIG0_AP_GYRO_FS_SEL_250_DPS;  break;
-  case 500:  ret = GYRO_CONFIG0_AP_GYRO_FS_SEL_500_DPS;  break;
-  case 1000: ret = GYRO_CONFIG0_AP_GYRO_FS_SEL_1000_DPS; break;
-  case 2000: ret = GYRO_CONFIG0_AP_GYRO_FS_SEL_2000_DPS; break;
+  case 16:   ret = GYRO_CONFIG0_AP_GYRO_FS_SEL_15_625_DPS; break;
+  case 31:   ret = GYRO_CONFIG0_AP_GYRO_FS_SEL_31_25_DPS; break;
+  case 62:   ret = GYRO_CONFIG0_AP_GYRO_FS_SEL_62_5_DPS;  break;
+  case 125:  ret = GYRO_CONFIG0_AP_GYRO_FS_SEL_125_DPS;   break;
+  case 250:  ret = GYRO_CONFIG0_AP_GYRO_FS_SEL_250_DPS;   break;
+  case 500:  ret = GYRO_CONFIG0_AP_GYRO_FS_SEL_500_DPS;   break;
+  case 1000: ret = GYRO_CONFIG0_AP_GYRO_FS_SEL_1000_DPS;  break;
+  case 2000: ret = GYRO_CONFIG0_AP_GYRO_FS_SEL_2000_DPS;  break;
 #if INV_IMU_HIGH_FSR_SUPPORTED
-  case 4000: ret = GYRO_CONFIG0_AP_GYRO_FS_SEL_4000_DPS; break;
+  case 4000: ret = GYRO_CONFIG0_AP_GYRO_FS_SEL_4000_DPS;  break;
 #endif
   default:
     /* Unknown gyro FSR. Set to default 2000dps" */

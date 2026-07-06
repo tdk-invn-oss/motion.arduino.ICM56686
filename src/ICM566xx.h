@@ -21,7 +21,7 @@
 #include "Arduino.h"
 #include "SPI.h"
 #include "Wire.h"
-#include "invn/platform_define.h"
+#include "Invn/platform_define.h"
 
 #if (INV_IMU_WHOAMI == 0x08)
 #define ICM56686
@@ -31,7 +31,7 @@
 
 extern "C" {
 #include "imu/inv_imu_edmp.h"
-#include "invn/InvError.h"
+#include "Invn/InvError.h"
 #include "imu/inv_imu_driver_advanced.h"
 #if defined(ICM56686)
 #include "imu/inv_imu_edmp_apex.h"
